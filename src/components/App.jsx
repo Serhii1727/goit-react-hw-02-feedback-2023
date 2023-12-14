@@ -12,11 +12,9 @@ export class App extends Component {
     bad: 0,
   };
 
-  handleFeedback = event => {
-    const nameKeyState = event.target.value;
-
+  handleFeedback = name => {
     this.setState(prevState => ({
-      [nameKeyState]: prevState[nameKeyState] + 1,
+      [name]: prevState[name] + 1,
     }));
   };
 

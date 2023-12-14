@@ -7,9 +7,10 @@ export default function FeedbackOptions({ options, onLeaveFeedback }) {
         return (
           <button
             key={buttonName}
-            value={buttonName}
             className={css.button}
-            onClick={onLeaveFeedback}
+            onClick={() => {
+              onLeaveFeedback(buttonName);
+            }}
           >
             {buttonName}
           </button>
