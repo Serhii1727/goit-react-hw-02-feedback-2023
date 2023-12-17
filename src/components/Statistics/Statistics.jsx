@@ -9,19 +9,19 @@ export default function Statistics({
 }) {
   return (
     <ul className={css.feedback__statistics}>
-      <li>
+      <li className={css.feedback__item}>
         <p>Good: {good}</p>
       </li>
-      <li>
+      <li className={css.feedback__item}>
         <p>Neutral: {neutral}</p>
       </li>
-      <li>
+      <li className={css.feedback__item}>
         <p>Bad: {bad}</p>
       </li>
-      <li>
+      <li className={css.feedback__item}>
         <p>Total: {total}</p>
       </li>
-      <li>
+      <li className={css.feedback__item}>
         <p>Positive feedback: {positivePercentage}%</p>
       </li>
     </ul>

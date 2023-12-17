@@ -12,7 +12,7 @@ export default function FeedbackOptions({ options, onLeaveFeedback }) {
               onLeaveFeedback(buttonName);
             }}
           >
-            {buttonName}
+            <span className={css.button__text}>{buttonName}</span>
           </button>
         );
       })}

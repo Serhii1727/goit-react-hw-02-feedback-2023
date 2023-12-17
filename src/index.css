@@ -17,6 +17,8 @@ code {
     monospace;
 }
 
-h1 {
+h1,
+p,
+ul {
   margin: 0;
 }
